@@ -24,6 +24,10 @@ main h3 {
   margin-left: 15px;
 }
 
+main div .heart-container {
+  margin-right: 2%;
+}
+
 section {
   position: relative;
   margin-top: -45px;
