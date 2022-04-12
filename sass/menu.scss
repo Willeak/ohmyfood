@@ -28,7 +28,7 @@ main {
         }
     }
 }
-section {
+.position_PC {
     position: relative;
     margin-top: -45px;
     background-color: #F6F6F6;
@@ -96,6 +96,10 @@ article {
             font-weight: bold;
             padding-left: 5px;
             color: rgb(65, 65, 65);
+            
+            p {
+                margin-top: 30px;
+            }
         }
 
         .check {
@@ -141,6 +145,13 @@ article {
     }
 }
 
+.button_container {
+    position: relative;
+    background-color: #F6F6F6;
+    border-radius: 0px 0px 0px 0px;
+    z-index: 10;
+}
+
 @keyframes rotation {
     from {
       transform: rotate(180deg);
@@ -149,3 +160,49 @@ article {
       transform: rotate(0deg);
     }
   }
+
+
+  @media screen and (min-width: 768px) {   /* VERSION TABLETTE */
+
+    .position_PC {
+        padding: 10px 40px;
+    }
+
+    footer {
+        padding-left: 40px;
+    }
+  }
+
+  @media screen and (min-width: 992px) {   /* VERSION PC Responsive */
+
+    .card_restaurant1 {
+        height: 500px; 
+    }
+
+    section {
+
+        display: flex;
+
+        article {
+
+        }
+    }
+
+    .position_PC {
+        padding: 10px 40px;
+        margin: auto 15%;
+        margin-top: -60px;
+    }
+    .button_container {
+        padding: 10px 40px;
+        margin: auto 20%;
+    }
+
+    h3 {
+        font-size: large;
+    }
+
+    p {
+        font-size: medium;
+    }
+}

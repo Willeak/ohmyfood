@@ -28,7 +28,7 @@ main div .heart-container {
   margin-right: 2%;
 }
 
-section {
+.position_PC {
   position: relative;
   margin-top: -45px;
   background-color: #F6F6F6;
@@ -113,6 +113,10 @@ article .card_menu .price {
   color: #414141;
 }
 
+article .card_menu .price p {
+  margin-top: 30px;
+}
+
 article .card_menu .check {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,6 +165,13 @@ article div:hover i {
           animation: rotation 0.5s forwards;
 }
 
+.button_container {
+  position: relative;
+  background-color: #F6F6F6;
+  border-radius: 0px 0px 0px 0px;
+  z-index: 10;
+}
+
 @-webkit-keyframes rotation {
   from {
     -webkit-transform: rotate(180deg);
@@ -180,6 +191,43 @@ article div:hover i {
   to {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* VERSION TABLETTE */
+  .position_PC {
+    padding: 10px 40px;
+  }
+  footer {
+    padding-left: 40px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* VERSION PC Responsive */
+  .card_restaurant1 {
+    height: 500px;
+  }
+  section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .position_PC {
+    padding: 10px 40px;
+    margin: auto 15%;
+    margin-top: -60px;
+  }
+  .button_container {
+    padding: 10px 40px;
+    margin: auto 20%;
+  }
+  h3 {
+    font-size: large;
+  }
+  p {
+    font-size: medium;
   }
 }
 /*# sourceMappingURL=menu.css.map */
