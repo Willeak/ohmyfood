@@ -27,7 +27,6 @@ main {
             margin-right: 2%;
         }
     }
-
 }
 section {
     position: relative;
@@ -41,29 +40,112 @@ section {
 
 article {
 
-    div {
+    .line {
         display: flex;
-        justify-content: flex-start;
+        width: 50px;
+        height: 4px;
+        background-color: #99e2d0;
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+
+    .card_menu {
+        display: flex;
+        justify-content: space-between;
         background-color: white;
         box-shadow: 0px 6px 15px 1px rgba(0,0,0,0.1);
         border-radius: 20px;
-        padding: 3px 15px;
+        padding: 15px 15px;
         margin: 15px auto;
-
-        p {
-            display: flex;
-            flex-direction: column;
-        }
+        overflow: hidden;
+        height: 50px;
+        cursor: pointer;
 
         h3 {
             font-weight: 700;
             margin-top: 0px;
             margin-left: 0px;
+            max-width: 400px;
             height: 25px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .titre_repas {
+            display:inline-block;
+            overflow: hidden;
+            max-width: 400px;
+        }
+
+        p {
+            flex-direction: column;
+            justify-content: flex-end;
+            margin: 0;
+            margin-top: 5px;
+            max-width: 400px;
+            height: 20px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .price {
+            display: flex;
+            flex-direction: row;
+            font-weight: bold;
+            padding-left: 5px;
+            color: rgb(65, 65, 65);
+        }
+
+        .check {
+            display: flex;
+            background-color: #99E2D0;
+            width: 80px;
+            height: 80px;
+            margin: 0;
+            margin-top: -15px;
+            margin-left: 25px;
+            margin-right: -95px;
+            padding: 0;
+
+            i {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                width: 23px;
+                height: 23px;
+                margin: 27px;
+                border-radius: 50%;
+                color: #99E2D0;
+                
+            }
+        }
+
+    }
+
+    div:hover {
+
+        .check {
+            display: flex;
+            width: 80px;
+            height: 80px;
+            margin-right: -16px;
+            transition-duration: 0.5s;
+        }
+
+        i {
+            animation: rotation 0.5s forwards;
         }
     }
 }
 
-div {
-    
-}
+@keyframes rotation {
+    from {
+      transform: rotate(180deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
