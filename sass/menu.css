@@ -37,7 +37,7 @@ main div .heart-container {
   padding: 10px 15px;
 }
 
-article .line {
+section article .line {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,7 +48,7 @@ article .line {
   margin-left: 15px;
 }
 
-article .card_menu {
+section article .card_menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,7 +66,7 @@ article .card_menu {
   cursor: pointer;
 }
 
-article .card_menu h3 {
+section article .card_menu h3 {
   font-weight: 700;
   margin-top: 0px;
   margin-left: 0px;
@@ -77,13 +77,13 @@ article .card_menu h3 {
   text-overflow: ellipsis;
 }
 
-article .card_menu .titre_repas {
+section article .card_menu .titre_repas {
   display: inline-block;
   overflow: hidden;
   max-width: 400px;
 }
 
-article .card_menu p {
+section article .card_menu p {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -100,7 +100,7 @@ article .card_menu p {
   text-overflow: ellipsis;
 }
 
-article .card_menu .price {
+section article .card_menu .price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,11 +113,7 @@ article .card_menu .price {
   color: #414141;
 }
 
-article .card_menu .price p {
-  margin-top: 30px;
-}
-
-article .card_menu .check {
+section article .card_menu .check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,7 +127,7 @@ article .card_menu .check {
   padding: 0;
 }
 
-article .card_menu .check i {
+section article .card_menu .check i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,7 +145,14 @@ article .card_menu .check i {
   color: #99E2D0;
 }
 
-article div:hover .check {
+section .button_container {
+  position: relative;
+  background-color: #F6F6F6;
+  border-radius: 40px 40px 0px 0px;
+  padding: 10px 15px;
+}
+
+section div:hover .check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,16 +163,9 @@ article div:hover .check {
           transition-duration: 0.5s;
 }
 
-article div:hover i {
+section div:hover i {
   -webkit-animation: rotation 0.5s forwards;
           animation: rotation 0.5s forwards;
-}
-
-.button_container {
-  position: relative;
-  background-color: #F6F6F6;
-  border-radius: 0px 0px 0px 0px;
-  z-index: 10;
 }
 
 @-webkit-keyframes rotation {
@@ -204,30 +200,42 @@ article div:hover i {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   /* VERSION PC Responsive */
   .card_restaurant1 {
     height: 500px;
   }
-  section {
+  main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .position_PC {
-    padding: 10px 40px;
-    margin: auto 15%;
-    margin-top: -60px;
-  }
-  .button_container {
-    padding: 10px 40px;
+  main .position_PC {
+    display: block;
+    position: static;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    height: 457px;
     margin: auto 20%;
   }
-  h3 {
-    font-size: large;
+  main .position_PC section article {
+    display: inline-block;
+    width: 33%;
   }
-  p {
-    font-size: medium;
+  main .position_PC section article .card_menu {
+    margin: 15px 8px;
   }
 }
 /*# sourceMappingURL=menu.css.map */

@@ -28,6 +28,7 @@ main {
         }
     }
 }
+
 .position_PC {
     position: relative;
     margin-top: -45px;
@@ -37,6 +38,10 @@ main {
     z-index: 10;
     padding: 10px 15px;
 }
+
+section {
+
+
 
 article {
 
@@ -96,10 +101,6 @@ article {
             font-weight: bold;
             padding-left: 5px;
             color: rgb(65, 65, 65);
-            
-            p {
-                margin-top: 30px;
-            }
         }
 
         .check {
@@ -128,6 +129,14 @@ article {
         }
 
     }
+}
+
+    .button_container {
+        position: relative;
+        background-color: #F6F6F6;
+        border-radius: 40px 40px 0px 0px;
+        padding: 10px 15px;
+    }
 
     div:hover {
 
@@ -143,13 +152,6 @@ article {
             animation: rotation 0.5s forwards;
         }
     }
-}
-
-.button_container {
-    position: relative;
-    background-color: #F6F6F6;
-    border-radius: 0px 0px 0px 0px;
-    z-index: 10;
 }
 
 @keyframes rotation {
@@ -173,36 +175,39 @@ article {
     }
   }
 
-  @media screen and (min-width: 992px) {   /* VERSION PC Responsive */
+  @media screen and (min-width: 1024px) {   /* VERSION PC Responsive */
 
     .card_restaurant1 {
-        height: 500px; 
+        height: 500px;
     }
 
-    section {
-
+    main {
         display: flex;
+        flex-direction: column;
+        align-items: center;
 
-        article {
+        .position_PC {
+            display: block;
+            position: static;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            height: 457px;
+            margin: auto 20%;
 
+            section {
+
+                article {
+                    display: inline-block;
+                    width: 33%;
+                    
+                    .card_menu {
+                        margin: 15px 8px;
+                        
+                    }
+                }
+
+            }
         }
-    }
-
-    .position_PC {
-        padding: 10px 40px;
-        margin: auto 15%;
-        margin-top: -60px;
-    }
-    .button_container {
-        padding: 10px 40px;
-        margin: auto 20%;
-    }
-
-    h3 {
-        font-size: large;
-    }
-
-    p {
-        font-size: medium;
     }
 }
