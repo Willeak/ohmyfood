@@ -28,6 +28,11 @@ main div .heart-container {
   margin-right: 2%;
 }
 
+main .button_container {
+  background-color: #F6F6F6;
+  padding: 10px 15px;
+}
+
 .position_PC {
   position: relative;
   margin-top: -45px;
@@ -145,13 +150,6 @@ section article .card_menu .check i {
   color: #99E2D0;
 }
 
-section .button_container {
-  position: relative;
-  background-color: #F6F6F6;
-  border-radius: 40px 40px 0px 0px;
-  padding: 10px 15px;
-}
-
 section div:hover .check {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,8 +216,6 @@ section div:hover i {
             align-items: center;
   }
   main .position_PC {
-    display: block;
-    position: static;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -227,8 +223,16 @@ section div:hover i {
         -ms-flex-align: center;
             align-items: center;
     width: 80%;
-    height: 457px;
     margin: auto 20%;
+    margin-top: -80px;
+  }
+  main .position_PC section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   main .position_PC section article {
     display: inline-block;
@@ -236,6 +240,9 @@ section div:hover i {
   }
   main .position_PC section article .card_menu {
     margin: 15px 8px;
+  }
+  main .position_PC section article .card_menu .price p {
+    margin-top: 30px;
   }
 }
 /*# sourceMappingURL=menu.css.map */
