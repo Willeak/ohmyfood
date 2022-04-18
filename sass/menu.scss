@@ -28,8 +28,8 @@ main {
         }
     }
     .button_container {
+        margin-top: 30px;
         background-color: #F6F6F6;
-        padding: 10px 15px;
     }
 }
 
@@ -58,6 +58,10 @@ article {
         margin-left: 15px;
     }
 
+    .card_menu::after {
+        opacity: 1;
+    }
+
     .card_menu {
         display: flex;
         justify-content: space-between;
@@ -69,6 +73,10 @@ article {
         overflow: hidden;
         height: 50px;
         cursor: pointer;
+        opacity: 0;
+        animation: appear 1s forwards;
+        
+
 
         h3 {
             font-weight: 700;
@@ -133,10 +141,40 @@ article {
         }
 
     }
+    .delay-1 {
+        animation-delay: 0.1s;
+    }
+    .delay-2 {
+        animation-delay: 0.2s;
+    }
+    .delay-3 {
+        animation-delay: 0.3s;
+    }
+    .delay-4 {
+        animation-delay: 0.4s;
+    }
+    .delay-5 {
+        animation-delay: 0.5s;
+    }
+    .delay-6 {
+        animation-delay: 0.6s;
+    }
+    .delay-7 {
+        animation-delay: 0.7s;
+    }
+    .delay-8 {
+        animation-delay: 0.8s;
+    }
+    .delay-9 {
+        animation-delay: 0.9s;
+    }
+    .delay-10 {
+        animation-delay: 1s;
+    }
+    .delay-11 {
+        animation-delay: 1s;
+    }
 }
-
-
-
     div:hover {
 
         .check {
@@ -151,6 +189,8 @@ article {
             animation: rotation 0.5s forwards;
         }
     }
+
+
 }
 
 @keyframes rotation {
@@ -218,3 +258,16 @@ article {
         }
     }
 }
+
+
+@keyframes  appear {
+
+    0% {
+        transform: translateY(50%); opacity: 0;
+    }
+    100% {
+        transform: translateY(0%); opacity: 1;
+    }
+}
+
+

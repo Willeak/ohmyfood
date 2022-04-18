@@ -29,8 +29,8 @@ main div .heart-container {
 }
 
 main .button_container {
+  margin-top: 30px;
   background-color: #F6F6F6;
-  padding: 10px 15px;
 }
 
 .position_PC {
@@ -53,6 +53,10 @@ section article .line {
   margin-left: 15px;
 }
 
+section article .card_menu::after {
+  opacity: 1;
+}
+
 section article .card_menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -69,6 +73,9 @@ section article .card_menu {
   overflow: hidden;
   height: 50px;
   cursor: pointer;
+  opacity: 0;
+  -webkit-animation: appear 1s forwards;
+          animation: appear 1s forwards;
 }
 
 section article .card_menu h3 {
@@ -148,6 +155,61 @@ section article .card_menu .check i {
   margin: 27px;
   border-radius: 50%;
   color: #99E2D0;
+}
+
+section article .delay-1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+section article .delay-2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+section article .delay-3 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+section article .delay-4 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+section article .delay-5 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+section article .delay-6 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+section article .delay-7 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+section article .delay-8 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+section article .delay-9 {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+section article .delay-10 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+section article .delay-11 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 section div:hover .check {
@@ -243,6 +305,32 @@ section div:hover i {
   }
   main .position_PC section article .card_menu .price p {
     margin-top: 30px;
+  }
+}
+
+@-webkit-keyframes appear {
+  0% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=menu.css.map */
