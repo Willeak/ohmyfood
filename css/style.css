@@ -156,6 +156,11 @@ h2 {
     margin-left: 10px;
     height: 80px;
 }
+.guide:hover {
+    background-color: #F5EDFF;
+    box-shadow: 0px 6px 15px 1px #9256dc88;;
+    transition: 0.5s;
+}
 .circle {
     background-color: #9356DC;
     color: white;
@@ -168,9 +173,6 @@ h2 {
     margin-top: -5px;
     margin: auto 30px;
     width: 24px;
-}
-.back-purple {
-    background-color: #F5EDFF;
 }
 .color-pink {
     color: #9356DC;
